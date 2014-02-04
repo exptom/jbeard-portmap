@@ -1,12 +1,10 @@
-class portmap::rhel::services (
+class portmap::debian::services (
     $ensure = running,
     $enable = true,
 ) {
 
-    $services = $::lsbmajdistrelease ? {
-        5 => 'portmap',
-        6 => 'rpcbind',
-    }
+    # FIXME I assume I'll need to do something with idmapd
+    $services = 'portmap'
 
     service { $services:
         ensure => $ensure,
