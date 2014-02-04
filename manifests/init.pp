@@ -65,6 +65,6 @@ class portmap (
         }
     }
 
-    anchod { 'portmap::end': }
+    anchor { 'portmap::end': }
 
 }
