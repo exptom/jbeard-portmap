@@ -28,7 +28,7 @@ It also controls execution of the appropriate daemon services.  These are typica
 `rpcbind` or `portmap`, depending on OS version.
 
 ###Setup requirements
-This module has no special setup requirements.
+This module requires the [puppetlabs/stdlib][stdlib] module.
 
 ###Beginning with portmap
 Simply including this module will install and execute the portmap service on your host.
@@ -59,4 +59,5 @@ The portmap module is currently only supported on RedHat Enterprise Linux 5/6, C
 _TODO_ Document development practices
 
 [wikipedia]: http://en.wikipedia.org/wiki/Portmap "Portmap - Wikipedia, the free encyclopedia"
+[stdlib]: http://forge.puppetlabs.com/puppetlabs/stdlib "puppetlabs/stdlib - Puppet Forge"
 

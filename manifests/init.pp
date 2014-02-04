@@ -41,6 +41,8 @@ class portmap (
     $enable  = true,
 ) inherits portmap::params {
 
+    require stdlib
+
     anchor { 'portmap::begin': }
 
     case $::operatingsystem {
