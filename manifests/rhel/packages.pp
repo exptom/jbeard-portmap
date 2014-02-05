@@ -2,7 +2,7 @@ class portmap::rhel::packages (
     $ensure = installed,
 ) {
 
-    $packages = $::lsbmajdistrelease ? {
+    $packages = $::operatingsystemmajrelease ? {
         5 => 'portmap',
         6 => 'rpcbind',
     }

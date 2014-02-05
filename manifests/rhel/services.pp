@@ -3,7 +3,7 @@ class portmap::rhel::services (
     $enable = true,
 ) {
 
-    $services = $::lsbmajdistrelease ? {
+    $services = $::operatingsystemmajrelease ? {
         5 => 'portmap',
         6 => 'rpcbind',
     }
