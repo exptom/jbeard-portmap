@@ -53,7 +53,7 @@ class portmap (
                 enable  => $enable,
             }
         }
-        debian : {
+        debian, ubuntu : {
             class { 'portmap::debian':
                 package => $package,
                 service => $service,
