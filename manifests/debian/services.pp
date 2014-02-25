@@ -4,11 +4,18 @@ class portmap::debian::services (
 ) {
 
     # FIXME I assume I'll need to do something with idmapd
-    $services = 'portmap'
+
+    case $::lsbdistrelease {
+      13.10 : {
+        $services = 'rpcbind'
+      }
+      default : {
+        $services = 'portmap'
+      }
+    }
 
     service { $services:
         ensure => $ensure,
         enable => $enable,
     }
-
 }
