@@ -5,12 +5,26 @@ class portmap::debian::services (
 
     # FIXME I assume I'll need to do something with idmapd
 
-    case $::lsbdistrelease {
-      13.10 : {
-        $services = 'rpcbind'
+    case $::lsbdistid  {
+      /(ubuntu|Ubuntu)/ : {
+        case $::lsbdistrelease {
+          13.10 : {
+            $services = 'rpcbind'
+          }
+          default : {
+            $services = 'portmap'
+          }
+        }
       }
-      default : {
-        $services = 'portmap'
+      /(debian|Debian)/ : {
+        case $::lsbmajdistrelease {
+          7 : {
+            $services = 'rpcbind'
+          }
+          default : {
+            $services = 'portmap'
+          }
+        }
       }
     }
 
