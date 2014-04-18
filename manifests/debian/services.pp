@@ -11,6 +11,9 @@ class portmap::debian::services (
           13.10 : {
             $services = 'rpcbind'
           }
+          14.04 : {
+            $services = 'rpcbind'
+          }
           default : {
             $services = 'portmap'
           }
