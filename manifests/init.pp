@@ -45,15 +45,15 @@ class portmap (
 
     anchor { 'portmap::begin': }
 
-    case $::operatingsystem {
-        centos, redhat : {
+    case $::osfamily {
+        RedHat : {
             class { 'portmap::rhel':
                 package => $package,
                 service => $service,
                 enable  => $enable,
             }
         }
-        debian, ubuntu : {
+        Debian : {
             class { 'portmap::debian':
                 package => $package,
                 service => $service,
