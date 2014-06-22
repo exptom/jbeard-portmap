@@ -5,3 +5,4 @@ Thanks for contributions from:
   * Michael Speth
   * Tom Purl
   * nerdlich (https://github.com/nerdlich)
+  * Daniel Silverman
