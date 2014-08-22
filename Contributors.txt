@@ -6,3 +6,4 @@ Thanks for contributions from:
   * Tom Purl
   * nerdlich (https://github.com/nerdlich)
   * Daniel Silverman
+  * Sebastian Reitenbach
