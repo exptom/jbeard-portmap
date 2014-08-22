@@ -60,6 +60,12 @@ class portmap (
                 enable  => $enable,
             }
         }
+        OpenBSD : {
+            class { 'portmap::openbsd':
+                service => $service,
+                enable  => $enable,
+            }
+        }
         default : {
             fail("portmap is not currently supported on ${::operatingsystem}")
         }
