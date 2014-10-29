@@ -8,6 +8,7 @@ class portmap::rhel::services (
         default  => $::operatingsystemmajrelease ? {
             5 => 'portmap',
             6 => 'rpcbind',
+            7 => 'rpcbind',
         }
     }
 
