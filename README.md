@@ -54,8 +54,8 @@ _TODO_ List all the classes and organization
 
 ##Limitations
 The portmap module is supported on:
-  * RedHat Enterprise Linux 5/6,
-  * CentOS 5/6,
+  * RedHat Enterprise Linux 5/6/7,
+  * CentOS 5/6/7,
   * Debian,
   * Ubuntu 12.04 LTS, 13.10, and 14.04,
   * OpenBSD
