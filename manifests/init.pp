@@ -46,21 +46,21 @@ class portmap (
     anchor { 'portmap::begin': }
 
     case $::osfamily {
-        RedHat : {
+        'RedHat': {
             class { 'portmap::rhel':
                 package => $package,
                 service => $service,
                 enable  => $enable,
             }
         }
-        Debian : {
+        'Debian': {
             class { 'portmap::debian':
                 package => $package,
                 service => $service,
                 enable  => $enable,
             }
         }
-        OpenBSD : {
+        'OpenBSD': {
             class { 'portmap::openbsd':
                 service => $service,
                 enable  => $enable,
