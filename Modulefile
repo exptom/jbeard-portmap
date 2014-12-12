@@ -1,5 +1,5 @@
 name    'jbeard-portmap'
-version '0.1.8'
+version '0.1.9'
 source 'https://github.com/jbeard6/jbeard-portmap'
 author 'jbeard'
 license 'Apache License, Version 2.0'

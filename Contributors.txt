@@ -8,3 +8,4 @@ Thanks for contributions from:
   * Daniel Silverman
   * Sebastian Reitenbach
   * Netbulae (https://github.com/Netbulae)
+  * treyormsbee (https://github.com/treyormsbee)
