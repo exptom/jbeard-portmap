@@ -8,10 +8,10 @@ class portmap::debian::services (
     case $::lsbdistid  {
       /(ubuntu|Ubuntu)/ : {
         case $::lsbdistrelease {
-          13.10 : {
+          '13.10' : {
             $services = 'rpcbind'
           }
-          14.04 : {
+          '14.04' : {
             $services = 'rpcbind'
           }
           default : {
@@ -21,7 +21,7 @@ class portmap::debian::services (
       }
       /(debian|Debian)/ : {
         case $::lsbmajdistrelease {
-          7 : {
+          '7' : {
             $services = 'rpcbind'
           }
           default : {

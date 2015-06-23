@@ -5,9 +5,9 @@ class portmap::rhel::packages (
     $packages = $::operatingsystem ? {
         "Amazon" => 'rpcbind',
         default  => $::operatingsystemmajrelease ? {
-            5 => 'portmap',
-            6 => 'rpcbind',
-            7 => 'rpcbind',
+            '5' => 'portmap',
+            '6' => 'rpcbind',
+            '7' => 'rpcbind',
       }
     }
 
