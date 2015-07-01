@@ -1,6 +1,6 @@
 {
   "name": "jbeard-portmap",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "author": "jbeard",
   "summary": "Module controlling the portmap/rpcbind daemon.",
   "license": "Apache License, Version 2.0",
