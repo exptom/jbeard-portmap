@@ -24,6 +24,9 @@ class portmap::debian::services (
           '7' : {
             $services = 'rpcbind'
           }
+          '8' : {
+            $services = 'rpcbind'
+          }
           default : {
             $services = 'portmap'
           }
